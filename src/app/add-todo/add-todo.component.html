@@ -1,0 +1,8 @@
+<div class="list-input-container">
+  <input type="text"
+    (keydown.enter)="sendTodo()"
+    [(ngModel)]="nameOfTodo"
+    class="input"
+  >
+  <button (click)="sendTodo()" class="add-item-btn">Add</button>
+</div>

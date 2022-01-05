@@ -1,0 +1,14 @@
+<div *ngIf="todoList" class="list-container">
+  <ul>
+    <li *ngFor="let item of todoList" class="list-item">
+      <span [ngClass]="item.completed ? 'green' : 'red'">{{ item.name }}</span>
+      <i
+        class="fa fa-check"
+        aria-hidden="true"
+        *ngIf="!item.completed"
+        (click)="itemComplete(item)"
+      ></i>
+      <i class="fas fa-trash-alt" (click)="itemRemove(item)"></i>
+    </li>
+  </ul>
+</div>

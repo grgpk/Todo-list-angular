@@ -1,0 +1,44 @@
+.list-container {
+  display: flex;
+  justify-content: center;
+
+  & ul {
+    padding: 0;
+  }
+}
+
+.list-item {
+  list-style: none;
+  width: 300px;
+  padding: 10px 0;
+  border-radius: 10px;
+  border: solid 1px black;
+  text-align: center;
+  margin-top: 2px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  position: relative;
+  background-color: white;
+}
+
+.green {
+  color: rgb(26, 177, 26);
+}
+
+.red {
+  color: red;
+}
+
+.fas {
+  position: absolute;
+  right: 5px;
+  cursor: pointer;
+  color: black;
+}
+
+.fa-check {
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+  color: rgb(50, 240, 50);
+}
